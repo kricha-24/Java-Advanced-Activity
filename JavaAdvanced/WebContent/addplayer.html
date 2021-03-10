@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<head>
+	<title></title>
+</head>
+<style>
+  .required:after {
+    content:" *";
+    color:rgb(128, 128, 192);
+  }
+p.italic {font-style : italic;}
+
+</style>
+
+<body style="background-color:white;text-align:center">
+
+<form action="./InsertPlayer" method="post">
+<div align="center" style="background-color:#3189C8;margin:10px;border:thin solid;border-width:5pxs">
+<h2 style="color:white">Player Deets</h2>
+</div>
+
+<div style="background: #99ccff; text-align:center">
+
+	
+        <table>
+            <tr>
+                <td><label class="required"><em>Name:</em></label> &nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="text" name="name" placeholder="Enter Name" autofocus required><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>DOB:</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="date" name="dob" placeholder="DD/MM/YYYY" required=><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>Matches</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="number" name="mat" placeholder="Matches played in numbers" required="true" min="0"><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>Runs</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="number" name="run" placeholder="Runs Scored" required="true" min="0"><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>Wickets</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="number" name="wic" placeholder="Wickets Taken" required="true" min="0"><br><br></td>
+            </tr>
+        
+        </table>
+	<input type="submit" value="Add Player">
+
+</div>
+
+</form>
+</body>
+</html>
