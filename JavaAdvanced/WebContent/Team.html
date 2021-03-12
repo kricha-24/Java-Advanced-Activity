@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Team</title>
+</head>
+<style>
+  .required:after {
+    content:" *";
+    color:rgb(128, 128, 192);
+  }
+p.italic {font-style : italic;}
+</style>
+<body style="background-color:rgb(216, 200, 230);text-align:center">
+
+<form action="./InsertTeam" method="post">
+<div align="center" style="background-color:rgb(49, 137, 200);margin:10px;border:thin solid;border-width:5pxs">
+<h2 style="color:white">Team Deets</h2>
+</div>
+
+<div style="background: rgb(255, 255, 255); text-align:center">
+
+	
+        <table>
+            <tr>
+                <td><label class="required"><em>Team Id:</em></label> &nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="number" name="tid" placeholder="Enter Team id" autofocus required="true"><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>Team Name:</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="text" name="tname" placeholder="Team Name" required="true"><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>Team Name:</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="text" name="oname" placeholder="Team Name" required="true" min="0"><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>Coach Name :</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="text" name="cname" placeholder="Coach Name" required="true" min="0"><br><br></td>
+            </tr>
+            <tr>
+                <td><label class="required"><em>Captain Id :</em></label>&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="number" name="cid" placeholder="Captain Id" required="true" min="0"><br><br></td>
+            </tr>
+        
+        </table>
+	<input type="submit" value="Add Team">
+
+</div>
+
+</form>
+</body>
+</html>
